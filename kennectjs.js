@@ -63,7 +63,7 @@ function bubbleSort() {
   arrangeBars();
 }
 
-// Other sorting algorithms: Quick Sort, Merge Sort, Shell Sort
+
 
 // Quick Sort implementation
 function quickSort() {
@@ -191,15 +191,15 @@ function arrangeBars() {
   bars.forEach(bar => container.appendChild(bar));
 }
 
-generateBars(); // Generate bars initially
+generateBars(); 
 
 function reduceSize() {
   bars.forEach(bar => {
-    // Get the current height of the bar
+    
     const currentHeight = parseInt(bar.style.height, 10);
-    // Reduce the height by a certain value (e.g., 10 pixels)
-    const reducedHeight = currentHeight - 10; // Change this value to adjust the reduction amount
-    // Ensure the reduced height is not less than a minimum value (e.g., 5 pixels)
+    
+    const reducedHeight = currentHeight - 10; 
+   
     bar.style.height = `${Math.max(reducedHeight, 5)}px`;
   });
 }
